@@ -11,6 +11,9 @@ import {
   RotateCcw,
   RotateCw,
   Type,
+  Waves,
+  Eraser,
+  Layout,
   FilePlus2,
   Presentation
 } from 'lucide-react';
@@ -65,6 +68,14 @@ export const TOOLS = [
     category: 'Convert'
   },
   {
+    id: 'pdf-to-text',
+    title: 'PDF to Text',
+    description: 'Extract all text content from your PDF files into a TXT.',
+    icon: FileText,
+    color: 'bg-zinc-600',
+    category: 'Convert'
+  },
+  {
     id: 'protect',
     title: 'Protect PDF',
     description: 'Encrypt your PDF with a password for security.',
@@ -79,14 +90,6 @@ export const TOOLS = [
     icon: Unlock,
     color: 'bg-teal-600',
     category: 'Security'
-  },
-  {
-    id: 'pdf-to-text',
-    title: 'PDF to Text',
-    description: 'Extract all text content from your PDF files into a TXT.',
-    icon: FileText,
-    color: 'bg-zinc-600',
-    category: 'Convert'
   },
   {
     id: 'ppt',
@@ -118,6 +121,30 @@ export const TOOLS = [
     description: 'Add text annotations, basic shapes, or highlights to your PDF pages.',
     icon: Type,
     color: 'bg-indigo-600',
+    category: 'Edit'
+  },
+  {
+    id: 'watermark',
+    title: 'Add Watermark',
+    description: 'Apply a text or image watermark to your PDF pages.',
+    icon: Waves,
+    color: 'bg-sky-500',
+    category: 'Edit'
+  },
+  {
+    id: 'redact',
+    title: 'Redact Text',
+    description: 'Permanently remove sensitive information from your PDF.',
+    icon: Eraser,
+    color: 'bg-slate-700',
+    category: 'Edit'
+  },
+  {
+    id: 'header-footer',
+    title: 'Header & Footer',
+    description: 'Add custom headers, footers, or page numbers to your document.',
+    icon: Layout,
+    color: 'bg-cyan-600',
     category: 'Edit'
   },
   {
